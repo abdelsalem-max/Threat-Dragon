@@ -106,6 +106,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -189,7 +190,6 @@
               ]
             },
             "id": "896538d8-aa68-48f6-a5ec-06a2d6f03bcb",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Avsändare",
@@ -223,6 +223,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -306,7 +307,6 @@
               ]
             },
             "id": "ffd2ac94-c470-4aad-8a9d-71b6f2a813ea",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Mottagare",
@@ -317,6 +317,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -340,6 +347,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -423,7 +431,6 @@
               ]
             },
             "id": "0b8ae699-97f5-4731-9b0e-d90616bfa647",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Skickare",
@@ -460,6 +467,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -543,7 +551,6 @@
               ]
             },
             "id": "0fe5c414-01f9-477d-8a4e-df970e62f656",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Hämtare",
@@ -946,6 +953,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1029,7 +1037,6 @@
               ]
             },
             "id": "040d78b9-fd2d-4d90-91d0-9e65c8ae5ccc",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Databas",
