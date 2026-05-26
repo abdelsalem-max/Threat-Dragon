@@ -216,8 +216,8 @@
                 "text": "Mottagare"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -314,12 +314,32 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b1918ff8-002a-4547-a56a-d0d0be685686",
+                  "title": "Skummig Mottagare",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Det finns en chanse att mottagren är \"fake\" eller i andra ord en otröstlig person som manipulerade sin identitet för att själa valuebara data från avsändare som deras namn och personnummer.",
+                  "mitigation": "Den enklaste sättet att mitigatera chancen för spoofing är att inte klicka på skumma länkar och att använda hemsidor från mer tröstiga källor.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
@@ -1054,6 +1074,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
