@@ -335,15 +335,6 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -360,8 +351,8 @@
                 "text": "Skickare"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -458,12 +449,41 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "4fa5182e-62c6-4c28-ad0e-0cfc1a44f82d",
+                  "title": "Vägran att göra tjänst",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "Ibland så kan både Sändaren och Hämtaren vägra att göra tjänsten som tillges, som att hämta data från mottagaren eller Skickaren att skicka tillbaka den requested data till avsändaren. Det kan bero på antigen nätverk problem eller en act av Spoofing där datan kan hållas fast tills avsändaren skickar en sum pengar eller lägger in deras personliga information.",
+                  "mitigation": "Denna threats severity är rätt så låg och är något som kan fixas snabbt, om det är nätverks problem så behövs det att checka konnaktionen mellan de olika element. Om det är Spoofing så ska man inte svara eller klicka scumma länker och att kontakta sidan som den requested data kommer ifrån för hjälp.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -855,7 +875,11 @@
             },
             "vertices": [
               {
-                "x": -440,
+                "x": -420,
+                "y": 220
+              },
+              {
+                "x": -510,
                 "y": 220
               }
             ]
@@ -1074,6 +1098,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 3
   }
 }
